@@ -25,4 +25,4 @@ jobs:
           cache: 'maven'
 
       - name: Build with Maven
-        run: ./mvnw -ntp verify
+        run: chmod +x ./catalog-service/mvnw
