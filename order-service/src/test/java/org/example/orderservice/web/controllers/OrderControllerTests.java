@@ -40,8 +40,8 @@ class OrderControllerTests extends AbstractIT {
                     """
                         {
                             "customer" : {
-                                "name": "Siva",
-                                "email": "siva@gmail.com",
+                                "name": "Hari",
+                                "email": "hari@gmail.com",
                                 "phone": "999999999"
                             },
                             "deliveryAddress" : {
