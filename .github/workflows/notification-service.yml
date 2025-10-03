@@ -39,4 +39,4 @@ jobs:
       - name: Build and Publish Docker Image
         run: |
           ./mvnw spring-boot:build-image -DskipTests
-          docker push harivara/notification-order-service
+          docker push harivara/notification-service
