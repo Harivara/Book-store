@@ -114,7 +114,7 @@ services:
       - OAUTH2_SERVER_URL=http://keyclock:9191
 
     ports:
-      - "8080:8080"
+      - "8085:8085"
     restart: unless-stopped
     deploy:
       resources:
