@@ -34,6 +34,7 @@ services:
       - RABBITMQ_PORT=5672
       - RABBITMQ_USERNAME=guest
       - RABBITMQ_PASSWORD=guest
+      - OAUTH2_SERVER_URL=http://keyclock:9191
 
     ports:
       - "8083:8083"
@@ -102,3 +103,20 @@ services:
           memory: 700m
 #    labels:
 #      logging: "promtail"
+
+
+  bookstore-webapp:
+    image: harivara/bookstore-webapp
+    container_name: bookstore-webapp
+    environment:
+      - SPRING_PROFILES_ACTIVE=docker
+      - BOOKSTORE_API_GATEWAY_URL=http://api-gateway:8989
+      - OAUTH2_SERVER_URL=http://keyclock:9191
+
+    ports:
+      - "8080:8080"
+    restart: unless-stopped
+    deploy:
+      resources:
+        limits:
+          memory: 700m
