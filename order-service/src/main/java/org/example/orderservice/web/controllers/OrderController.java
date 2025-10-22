@@ -1,5 +1,6 @@
 package org.example.orderservice.web.controllers;
 
+import io.swagger.v3.oas.annotations.security.SecurityRequirement;
 import jakarta.validation.Valid;
 import java.util.List;
 
@@ -23,6 +24,7 @@ import org.springframework.web.bind.annotation.RestController;
 
 @RestController
 @RequestMapping("/api/orders")
+@SecurityRequirement(name="security_auth")
 class OrderController {
     private static final Logger log = LoggerFactory.getLogger(OrderController.class);
 
