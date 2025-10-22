@@ -40,4 +40,4 @@ jobs:
       - name: Build and Publish Docker Image
         run: |
           ./mvnw spring-boot:build-image -DskipTests
-          docker push harivara/bookstore-webapp
+          docker push harivara/bookstore-bookstore-webapp
