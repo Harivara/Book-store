@@ -11,7 +11,7 @@ public class BookstoreWebappApplication {
 
 	public static void main(String[] args) {
 		SpringApplication.run(BookstoreWebappApplication.class, args);
-		System.out.println("BookstoreWebappApplication started webApplication prometheus");
+		System.out.println("BookstoreWebappApplication started webApplication prometheus again");
 	}
 
 }
