@@ -19,6 +19,8 @@ services:
       resources:
         limits:
           memory: 700m
+    labels:
+      logging: "promtail"
 
 
   order-service:
@@ -48,8 +50,8 @@ services:
       resources:
         limits:
           memory: 700m
-#    labels:
-#      logging: "promtail"
+    labels:
+      logging: "promtail"
 
 
 
@@ -83,6 +85,8 @@ services:
       resources:
         limits:
           memory: 700m
+    labels:
+      logging: "promtail"
 
 
   api-gateway:
@@ -101,8 +105,8 @@ services:
       resources:
         limits:
           memory: 700m
-#    labels:
-#      logging: "promtail"
+    labels:
+      logging: "promtail"
 
 
   bookstore-webapp:
@@ -120,3 +124,5 @@ services:
       resources:
         limits:
           memory: 700m
+    labels:
+      logging: "promtail"
