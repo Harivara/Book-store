@@ -11,7 +11,7 @@ public class BookstoreWebappApplication {
 
 	public static void main(String[] args) {
 		SpringApplication.run(BookstoreWebappApplication.class, args);
-		System.out.println("BookstoreWebappApplication started prom");
+		System.out.println("BookstoreWebappApplication started resolving docker image push");
 	}
 
 }
